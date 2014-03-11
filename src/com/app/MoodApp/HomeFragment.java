@@ -26,6 +26,8 @@ public class HomeFragment extends ListFragment {
 
         setListAdapter(moodAdapter);
 
+        //moodAdapter.notifyDataSetChanged();
+
 
         return rootView;
     }

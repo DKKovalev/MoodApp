@@ -32,7 +32,7 @@ public class AddActivity extends Activity implements SeekBar.OnSeekBarChangeList
                 switch (v.getId()) {
                     case R.id.buttonShareMood:
                         Intent intent = new Intent();
-                        intent.putExtra("newMood", "Hello");
+                        intent.putExtra("mood", textDescription.getText());
                         setResult(RESULT_OK,intent);
                         AddActivity.this.finish();
                         break;
